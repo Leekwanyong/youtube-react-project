@@ -1,0 +1,53 @@
+.videodetail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/*  video-container가 iframe에 적절한 크기를 주지 않음 비율 유지 */
+.videodetail-container {
+    position: relative;
+    width: 100%;
+    /*  16:9 비율을 유지하기 위해 설정   */
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.videodetail-text {
+    display: flex;
+    gap: 4px;
+}
+
+.videodetail-text img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+    .videodetail {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .videodetail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .videodetail {
+        grid-template-columns: 1fr;
+    }
+}

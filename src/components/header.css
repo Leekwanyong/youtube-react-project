@@ -1,0 +1,41 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 4px;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.header-link__logo {
+    font-size: 3rem;
+    color: red;
+}
+
+.header-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.header-form input {
+    width: 50%;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 0.3rem;
+}
+
+.header-form__icon {
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
